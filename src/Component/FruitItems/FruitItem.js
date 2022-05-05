@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Item from './Item';
+import './FruitItem.css'
 
 const FruitItem = () => {
     const [items,setItem]= useState([])
@@ -11,7 +13,12 @@ const FruitItem = () => {
         <div>
             <h1 className="fw-bold text-warning text-center mt-5">New Product Item's</h1>
            <p className="text-center text-warning fw-bold">All the best items for You</p> 
-            <h1>data:{items.length}</h1>
+           <div className="item-container">
+           {
+               items.map(item=><Item key={item._id} item={item}></Item>)
+           }
+           </div>
+            
         </div>
     );
 };
