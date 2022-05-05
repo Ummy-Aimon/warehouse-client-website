@@ -66,7 +66,7 @@ if(user1){
      }
     return (
         <div className="login">
-           <h1 className="text">Please Login</h1>
+           <h1 className="fw-bold text-warning text-center mt-3">Please Login</h1>
            <Form onSubmit={handleSignIN} className="w-50 m-auto">     
   <Form.Group className="mb-3" controlId="formGroupEmail">
     <Form.Label className="fw-bold">Email address</Form.Label>
@@ -99,9 +99,9 @@ if(user1){
  }
     
   <p className="text1"> 
-  Sign Up For Doctor Mike's Newsletter? <Link className="text-secondary text-decoration-none" to="/signup">Create an account</Link>
+  Sign Up For fruit warehouse? <Link className="text-secondary text-decoration-none" to="/signup">Create an account</Link>
 </p>
-  <Button type="submit" className="w-100 fw-bold fs-4" variant="info">Submit</Button>
+  <Button type="submit" className="w-100 fw-bold fs-4 text-white" variant="warning">Submit</Button>
   <br></br> <br></br>
   
   <button onClick={() => signInWithGoogle()} type= "submit" className="button"> 

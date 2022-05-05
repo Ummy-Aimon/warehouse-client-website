@@ -1,0 +1,15 @@
+.login{
+    min-height:500px;
+}
+
+.button{
+    font-size:25px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color:rgb(245, 219, 71);
+    padding:10px;
+    color: white;
+}
