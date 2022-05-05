@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer">         
          <hr className="text-white"></hr>
          <div className="">    
-        <p className="text-center fw-bold text-white ">All Rights Reserved © {year} Dr. Mike</p> 
+        <p className="text-center fw-bold text-white ">Copyright ©  {year} amigosthemes. All rights reserved. </p> 
         
         <div className="icons-footer">
                       <div className="icon">
