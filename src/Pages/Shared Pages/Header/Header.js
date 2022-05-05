@@ -29,9 +29,10 @@ const Header = () => {
       { user?
       <Link onClick={handleSignOut} className="signout" to=''>Logout</Link>
       :
-      <Link className="header" to='/login'>
-        Login
-      </Link>
+      // <Link className="header" to='/login'>
+        <Nav.Link as={Link} to='/login' href="#login">Login</Nav.Link>
+        // Login
+      // </Link>
 }
       {/* <Nav.Link as={Link} to='/login' href="#login">Login</Nav.Link> */}
     </Nav>

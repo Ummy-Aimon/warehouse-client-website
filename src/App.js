@@ -3,6 +3,7 @@ import './App.css';
 import ItemDetails from './Component/Itemdetails/ItemDetails';
 import Login from './Component/Login/Login';
 import NotFound from './Component/Not Found pages/Not Found.js/NotFound';
+import RequireAuth from './Component/RequireAuth/RequireAuth';
 import SignUP from './Component/SignUp/SignUP';
 import HomePage from './Pages/HomePages/HomePage';
 import Footer from './Pages/Shared Pages/Footer/Footer';
@@ -16,7 +17,11 @@ function App() {
     <Route path="/" element={<HomePage></HomePage>}></Route>
     <Route path="/signup" element={<SignUP></SignUP>}></Route>
     <Route path="/login" element={<Login></Login>}></Route>
-    <Route path='/itemdetail' element={<ItemDetails></ItemDetails>}></Route>
+    <Route path='/itemdetail' element={
+<RequireAuth>
+    <ItemDetails></ItemDetails>
+    </RequireAuth>
+    }></Route>
     <Route path="*" element={<NotFound></NotFound>}></Route>
 
   </Routes>
