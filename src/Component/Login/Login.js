@@ -3,11 +3,12 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {FcGoogle} from 'react-icons/fc'
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../FireBase-init';
+// import auth from '../../FireBase-init';
 import { ToastContainer, toast } from 'react-toastify';
 
   import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import auth from '../../firebase-init';
 
 const Login = () => {
     const[email,setEmail] = useState('')
