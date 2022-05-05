@@ -19,6 +19,15 @@
     color:white; 
       
 }
+.icons{
+    font-size: 30px;
+    display: flex;     
+}
+.icon{
+    margin: 8px;
+    color: rgb(145, 127, 28)
+}
+
 .button1{
     margin-left: 20px;
     background-color:goldenrod;
