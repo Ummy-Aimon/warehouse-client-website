@@ -1,0 +1,64 @@
+[
+    {
+      
+      "name": "Natural fruit",
+      "description":"Frutella apple to your daily routine for a delicious and convenient source of Vitamin C: 10% of the Daily Value (DV). ",
+      "Supplier name": "Apple",
+      "Quantity":100,
+      "price":  3.50,
+      "img": "https://i.ibb.co/8b7sVtQ/apple.jpg"
+      
+    },
+    {
+    
+      "name": "Natural fruit",
+     "description":"Frutella orange to your daily routine for a delicious and convenient source of vitamin C",
+     "Supplier name":"orange",
+     "Quantity": 200,
+     "price": 4.50,
+    "img": "https://i.ibb.co/WKkcKkp/orange.jpg"
+     
+    },
+    {
+    
+        "name": "Natural fruit",
+       "description":"Frutella Banana to your daily routine for a delicious and convenient source of Vitamin B6",
+       "Supplier name":"Banana",
+       "Quantity": 230,
+       "price": 3.50,
+      "img": "https://i.ibb.co/8b71tk4/banana.jpg"
+       
+      },
+      {
+    
+        "name": "Natural fruit",
+       "description":"Frutella WaterLemon to your daily routine for a delicious and convenient source of  Vitamin C",
+       "Supplier name":"WaterLemon",
+       "Quantity": 300,
+       "price": 5.50,
+      "img": "https://i.ibb.co/ZGTHyY0/waterlemon.jpg"
+       
+      },
+      {
+    
+        "name": "Natural fruit",
+       "description":"Frutella Pineapple to your daily routine for a delicious and convenient source of Vitamin B6 and vitamin C",
+       "Supplier name":"Pineapple",
+       "Quantity": 230,
+       "price": 3.50,
+      "img": "https://i.ibb.co/JvBmwsL/pineapple.jpg"
+       
+      },
+      {
+    
+        "name": "Natural fruit",
+       "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
+       "Supplier name":"Dragon",
+       "Quantity": 430,
+       "price": 6.50,
+      "img": "https://i.ibb.co/dsTRypb/dragon.jpg"   
+      }
+    
+    
+    
+  ]
