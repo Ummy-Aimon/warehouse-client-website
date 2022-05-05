@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import ItemDetails from './Component/Itemdetails/ItemDetails';
 import Login from './Component/Login/Login';
 import NotFound from './Component/Not Found pages/Not Found.js/NotFound';
 import SignUP from './Component/SignUp/SignUP';
@@ -15,6 +16,7 @@ function App() {
     <Route path="/" element={<HomePage></HomePage>}></Route>
     <Route path="/signup" element={<SignUP></SignUP>}></Route>
     <Route path="/login" element={<Login></Login>}></Route>
+    <Route path='/itemdetail' element={<ItemDetails></ItemDetails>}></Route>
     <Route path="*" element={<NotFound></NotFound>}></Route>
 
   </Routes>

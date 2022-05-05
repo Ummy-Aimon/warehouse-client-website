@@ -19,7 +19,7 @@ const Item = (props) => {
     <h4 className="fw-bold text-warning">Supplier name:{Suppliername1}</h4>
     <p className="text-secondary fw-bold">Quantity name:{Quantity}</p>
     <p className="text-secondary fw-bold">$price:{price}</p>
-    <Button onClick={()=>navlink("/servicedetail")} type="submit" variant="primary">Updated Item</Button>
+    <Button onClick={()=>navlink("/itemdetail")} type="submit" variant="primary">Updated Item</Button>
   </Card.Body>
 {/* </Card> */}
         </div>
