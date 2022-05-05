@@ -57,7 +57,7 @@ createUserWithEmailAndPassword(email,password)
 }
 return (
     <div className="signup">
-       <h1 className="text">Sign Up</h1>
+       <h1 className="fw-bold text-center text-warning mt-3">Sign Up</h1>
        <Form onSubmit={handleCreateUser} className="w-50 m-auto">  
        <Form.Group className="mb-3" controlId="formGroupEmail"/>
 <Form.Label className="fw-bold"> Your Name</Form.Label>
@@ -81,7 +81,7 @@ return (
 <p className="fs-5 fw-bold">
 Already Have a acount ? <Link className="text-secondary text-decoration-none" to="/login">Login</Link>
 </p>
-<Button type="submit" className="w-100 fw-bold fs-4" variant="warning">Register</Button>
+<Button type="submit" className="w-100 fw-bold fs-3 text-white" variant="warning">Register</Button>
 </Form>
     </div>
 );
