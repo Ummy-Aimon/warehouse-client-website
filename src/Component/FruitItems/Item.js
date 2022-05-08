@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Item.css'
 
 const Item = (props) => {
     const{name,img,description,Quantity,price,Suppliername1}=props.item
+    
     const navlink= useNavigate()
+   
     return (
         
             <div className="shadow p-3 mb-5 bg-body rounded ">

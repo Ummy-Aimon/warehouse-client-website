@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './Component/Blog/Blog';
+import Contact from './Component/Contact/Contact';
 import ItemDetails from './Component/Itemdetails/ItemDetails';
 import Login from './Component/Login/Login';
 import NotFound from './Component/Not Found pages/Not Found.js/NotFound';
@@ -24,6 +25,7 @@ function App() {
     <ItemDetails></ItemDetails>
     </RequireAuth>
     }></Route>
+    {/* <Route path='/contact' element={<Contact></Contact>}></Route> */}
     <Route path="*" element={<NotFound></NotFound>}></Route>
 
   </Routes>
