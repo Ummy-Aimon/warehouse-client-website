@@ -4,9 +4,11 @@
       "name": "Natural fruit",
       "description":"Frutella apple to your daily routine for a delicious and convenient source of Vitamin C: 10% of the Daily Value (DV). ",
       "Supplier name": "Apple",
-      "Quantity":100,
+      "Quantity":50,
+      "sold":12,
       "price":  3.50,
-      "img": "https://i.ibb.co/8b7sVtQ/apple.jpg"
+      "img": "https://i.ibb.co/8b7sVtQ/apple.jpg",
+      "email":"abc@gmail.com"
       
     },
     {
@@ -14,9 +16,11 @@
       "name": "Natural fruit",
      "description":"Frutella orange to your daily routine for a delicious and convenient source of vitamin C",
      "Supplier name":"orange",
-     "Quantity": 200,
+     "Quantity": 100,
+     "sold":14,
      "price": 4.50,
-    "img": "https://i.ibb.co/WKkcKkp/orange.jpg"
+    "img": "https://i.ibb.co/WKkcKkp/orange.jpg",
+    "email": "abc@gmail.com"
      
     },
     {
@@ -24,9 +28,11 @@
         "name": "Natural fruit",
        "description":"Frutella Banana to your daily routine for a delicious and convenient source of Vitamin B6",
        "Supplier name":"Banana",
-       "Quantity": 230,
+       "Quantity": 200,
+       "sold":14,
        "price": 3.50,
-      "img": "https://i.ibb.co/8b71tk4/banana.jpg"
+      "img": "https://i.ibb.co/8b71tk4/banana.jpg",
+      "email": "bcs@gmail.com"
        
       },
       {
@@ -34,9 +40,11 @@
         "name": "Natural fruit",
        "description":"Frutella WaterLemon to your daily routine for a delicious and convenient source of  Vitamin C",
        "Supplier name":"WaterLemon",
-       "Quantity": 300,
+       "Quantity": 250,
+       "sold":10,
        "price": 5.50,
-      "img": "https://i.ibb.co/ZGTHyY0/waterlemon.jpg"
+      "img": "https://i.ibb.co/ZGTHyY0/waterlemon.jpg",
+      "email": "ummyatia@gmail.com"
        
       },
       {
@@ -45,8 +53,10 @@
        "description":"Frutella Pineapple to your daily routine for a delicious and convenient source of Vitamin B6 and vitamin C",
        "Supplier name":"Pineapple",
        "Quantity": 230,
+       "sold":18,
        "price": 3.50,
-      "img": "https://i.ibb.co/JvBmwsL/pineapple.jpg"
+      "img": "https://i.ibb.co/JvBmwsL/pineapple.jpg",
+      "email": "def@gmail.com"
        
       },
       {
@@ -55,8 +65,32 @@
        "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
        "Supplier name":"Dragon",
        "Quantity": 430,
+       "sold":12,
        "price": 6.50,
-      "img": "https://i.ibb.co/dsTRypb/dragon.jpg"   
+      "img": "https://i.ibb.co/dsTRypb/dragon.jpg",
+      "email": "web@programing-hero.com"   
+      },
+      {
+    
+        "name": "Natural fruit",
+       "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
+       "Supplier name":"Dragon",
+       "Quantity": 430,
+       "sold":12,
+       "price": 6.50,
+      "img": "https://i.ibb.co/dsTRypb/dragon.jpg",
+      "email": "web@programing-hero.com"   
+      },
+      {
+    
+        "name": "Natural fruit",
+       "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
+       "Supplier name":"Dragon",
+       "Quantity": 430,
+       "sold":12,
+       "price": 6.50,
+      "img": "https://i.ibb.co/dsTRypb/dragon.jpg",
+      "email": "web@programing-hero.com"   
       }
     
     

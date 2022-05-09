@@ -15,7 +15,7 @@ const FruitItem = () => {
            <p className="text-center text-warning fw-bold">All the best items for You</p> 
            <div className="item-container">
            {
-               items.map(item=><Item key={item._id} item={item}></Item>)
+               items.slice(0,6).map(item=><Item key={item._id} item={item}></Item>)
            }
            </div>
             
