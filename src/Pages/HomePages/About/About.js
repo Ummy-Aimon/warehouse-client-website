@@ -6,7 +6,7 @@ import './About.css'
 const About = () => {
     return (
         <div>
-            <h1 className="mt-5 text-center text-warning fw-bold">About Us</h1>
+            <h1 className="#about mt-5 text-center text-warning fw-bold">About Us</h1>
             <div className="container">
                 <div className="row">
                     <div className="grid">

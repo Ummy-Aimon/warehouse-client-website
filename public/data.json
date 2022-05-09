@@ -3,7 +3,7 @@
       
       "name": "Natural fruit",
       "description":"Frutella apple to your daily routine for a delicious and convenient source of Vitamin C: 10% of the Daily Value (DV). ",
-      "Supplier name": "Apple",
+      "Suppliername1": "Apple",
       "Quantity":50,
       "sold":12,
       "price":  3.50,
@@ -15,7 +15,7 @@
     
       "name": "Natural fruit",
      "description":"Frutella orange to your daily routine for a delicious and convenient source of vitamin C",
-     "Supplier name":"orange",
+     "Suppliername1":"orange",
      "Quantity": 100,
      "sold":14,
      "price": 4.50,
@@ -27,7 +27,7 @@
     
         "name": "Natural fruit",
        "description":"Frutella Banana to your daily routine for a delicious and convenient source of Vitamin B6",
-       "Supplier name":"Banana",
+       "Suppliername1":"Banana",
        "Quantity": 200,
        "sold":14,
        "price": 3.50,
@@ -39,7 +39,7 @@
     
         "name": "Natural fruit",
        "description":"Frutella WaterLemon to your daily routine for a delicious and convenient source of  Vitamin C",
-       "Supplier name":"WaterLemon",
+       "Suppliername1":"WaterLemon",
        "Quantity": 250,
        "sold":10,
        "price": 5.50,
@@ -51,7 +51,7 @@
     
         "name": "Natural fruit",
        "description":"Frutella Pineapple to your daily routine for a delicious and convenient source of Vitamin B6 and vitamin C",
-       "Supplier name":"Pineapple",
+       "Suppliername1":"Pineapple",
        "Quantity": 230,
        "sold":18,
        "price": 3.50,
@@ -63,7 +63,7 @@
     
         "name": "Natural fruit",
        "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
-       "Supplier name":"Dragon",
+       "Suppliername1":"Dragon",
        "Quantity": 430,
        "sold":12,
        "price": 6.50,
@@ -74,7 +74,7 @@
     
         "name": "Natural fruit",
        "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
-       "Supplier name":"Dragon",
+       "Suppliername1":"Dragon",
        "Quantity": 430,
        "sold":12,
        "price": 6.50,
@@ -85,7 +85,7 @@
     
         "name": "Natural fruit",
        "description":"Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels.",
-       "Supplier name":"Dragon",
+       "Suppliername1":"Dragon",
        "Quantity": 430,
        "sold":12,
        "price": 6.50,

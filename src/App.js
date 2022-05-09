@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import AddItem from './Component/Add items/AddItem';
+import AddItem from './Component/AddItem/AddItem';
 import Blog from './Component/Blog/Blog';
-import Contact from './Component/Contact/Contact';
 import ItemDetails from './Component/Itemdetails/ItemDetails';
 import Login from './Component/Login/Login';
-import MyItems from './Component/My Items/MyItems';
+import ManagItem from './Component/ManageItem/ManagItem';
+import MyItem from './Component/MyItem/MyItem';
 import NotFound from './Component/Not Found pages/Not Found.js/NotFound';
 import RequireAuth from './Component/RequireAuth/RequireAuth';
 import SignUP from './Component/SignUp/SignUP';
@@ -27,14 +27,19 @@ function App() {
     <ItemDetails></ItemDetails>
     </RequireAuth>
     }></Route>
-    <Route path='/myitems' element={
-<RequireAuth>
-    <MyItems></MyItems>
-    </RequireAuth>
-    }></Route>
     <Route path='/additem' element={
 <RequireAuth>
     <AddItem></AddItem>
+    </RequireAuth>
+    }></Route>
+    <Route path='/manageitem' element={
+<RequireAuth>
+    <ManagItem></ManagItem>
+    </RequireAuth>
+    }></Route>
+    <Route path='/myitems' element={
+<RequireAuth>
+    <MyItem></MyItem>
     </RequireAuth>
     }></Route>
     {/* <Route path='/contact' element={<Contact></Contact>}></Route> */}

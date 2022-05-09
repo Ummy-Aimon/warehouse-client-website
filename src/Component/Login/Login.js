@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 import auth from '../../firebase-init';
+import axios from 'axios';
 
 const Login = () => {
     const[email,setEmail] = useState('')
@@ -31,8 +32,9 @@ const [signInWithEmailAndPassword,user,loading,error] = useSignInWithEmailAndPas
      const handlePasswordBlur = e =>{
          setPassword(e.target.value)
      }
-
+console.log(user)
 if(user){
+
 navigate(from, { replace: true })
 }
 if(user1){
@@ -40,7 +42,7 @@ if(user1){
     }
 
 
-     const handleSignIN =(e) =>{
+     const  handleSignIN = e =>{
         e.preventDefault()
         if (error) {
             return   
@@ -62,7 +64,10 @@ if(user1){
             return 
           }
 
-        signInWithEmailAndPassword(email,password)
+       signInWithEmailAndPassword(email,password)
+  // const {data}= await axios.post('http://localhost:5000/getlogin',
+  // {email})
+  //      console.log(data)
      }
     return (
         <div className="login">
