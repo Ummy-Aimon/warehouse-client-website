@@ -5,7 +5,7 @@ import './FruitItem.css'
 const FruitItem = () => {
     const [items,setItem]= useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/item')
+        fetch('https://protected-wave-71878.herokuapp.com/item')
         .then(res=>res.json())
         .then(data=>setItem(data))
     },[])

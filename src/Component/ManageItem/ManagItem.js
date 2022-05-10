@@ -8,7 +8,7 @@ const ManagItem = () => {
     const handleDelete =(id)=>{
         const procced= window.confirm('Are You Sure?')
         if(procced){
-const url=`http://localhost:5000/item/${id}`
+const url=`https://protected-wave-71878.herokuapp.com/item/${id}`
 fetch(url,{
     method: 'DELETE',
 })
@@ -22,7 +22,7 @@ setData(del)
   }
     }
     useEffect(()=>{
-        fetch('http://localhost:5000/item')
+        fetch('https://protected-wave-71878.herokuapp.com/item')
         .then(res=>res.json())
         .then(data=>setData(data))
     },[])

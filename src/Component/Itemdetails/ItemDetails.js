@@ -9,13 +9,13 @@ const ItemDetails = (props) => {
     // console.log(itemID)
     const[items,setItem]=useState({})
     useEffect(()=>{
-        const url=`http://localhost:5000/item/${id}`
+        const url=`https://protected-wave-71878.herokuapp.com/item/${id}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setItem(data))
       },[quantity])
       const handleDeliverBtn = id => {
-        const url= `http://localhost:5000/updateitem/${id}`
+        const url= `https://protected-wave-71878.herokuapp.com/updateitem/${id}`
    fetch(url,{
        method: 'PUT',
        headers: { 

@@ -9,7 +9,7 @@ const AddItem = () => {
 //   navlink("/additem")
 // }
   const onSubmit = data => {
-  const url= `http://localhost:5000/item`
+  const url= `https://protected-wave-71878.herokuapp.com/item`
    fetch(url,{
        method: 'POST',
        headers: { 
