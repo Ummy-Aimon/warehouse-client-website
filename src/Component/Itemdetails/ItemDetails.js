@@ -6,7 +6,6 @@ import './ItemDetails.css'
 const ItemDetails = (props) => {
     const [quantity, setQuantity] = useState(0)
     const {id}= useParams()
-    // console.log(itemID)
     const[items,setItem]=useState({})
     useEffect(()=>{
         const url=`https://protected-wave-71878.herokuapp.com/item/${id}`

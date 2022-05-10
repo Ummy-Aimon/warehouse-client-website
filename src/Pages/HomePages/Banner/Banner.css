@@ -13,6 +13,15 @@
    
       
 }
+.banner-text{
+    
+        padding: 20px;
+        color:olive;
+        font-size: 30px;
+        font-weight: 700;
+        width: 50%;
+
+}
 .text-banner{
     font-size: 50px;
     padding: 10px;
@@ -32,3 +41,50 @@
     margin-left: 20px;
     background-color:goldenrod;
 }
+
+/* media query */
+
+@media only screen and (max-width: 1200px) {
+    .Banner {
+        background-image: url("https://cdn.cdnparenting.com/articles/2020/02/03114800/MIX-FRUIT-JUICE-RECIPE.jpg");
+        background-size: cover;
+        margin-top: 20px;
+      height: 100vh;
+      font-size:50px;
+      background-repeat:no-repeat; 
+    }
+    .text{
+        font-size: 25px;
+        color: rgb(226, 195, 23);
+        padding: 20px;
+        text-align: center;
+       
+          
+    }
+    .text-banner{
+        font-size: 23px;
+        padding: 20px;
+        color:white;
+        text-align:center; 
+        margin-left: 10px;
+          
+    }
+    .button1{
+        margin-left: 150px;
+        background-color:goldenrod;
+    }
+    p{
+        text-align: center;
+    }
+    .banner-text{
+    text-align: center;
+         padding: 10px;
+        color:olive;
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 70px; 
+        width:80%;
+
+}
+    
+  }

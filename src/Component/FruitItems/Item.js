@@ -24,7 +24,7 @@ const Item = (props) => {
     <p className="text-secondary fw-bold">Quantity name:{Quantity}</p>
     <p className="text-secondary fw-bold">$price:{price}</p>
     {/* <Button onClick={()=>navlink("/itemdetail")} type="submit" variant="primary">Updated Item</Button> */}
-    <Button onClick={()=>navigatetoitemdetail(_id)} type="submit" variant="primary">Updated Item</Button>
+    <Button className="item-btn" onClick={()=>navigatetoitemdetail(_id)} type="submit" variant="primary">Updated Item</Button>
   </Card.Body>
 {/* </Card> */}
         </div>

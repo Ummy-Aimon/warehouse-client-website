@@ -3,7 +3,28 @@
     grid-template-columns: repeat(2,1fr);
 }
 .img{
-    width:500px;
-    height: 500px;
+    width:400px;
+    height: 400px;
     margin-top: 50px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 1200px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    h2{
+        text-align: center;
+    }
+    h4{
+        text-align: center; 
+    }
+    .img{
+        width:100%;
+    }
+    p{
+        margin-left: 90px;
+    }
 }

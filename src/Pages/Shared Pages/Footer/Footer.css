@@ -11,3 +11,14 @@
     font-size: 30px;
     display: flex; 
 }
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        background-color: rgb(255, 198, 55);
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

@@ -3,6 +3,7 @@ import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import {FcGoogle} from 'react-icons/fc'
 import {BsFacebook} from 'react-icons/bs'
 import { Link } from 'react-router-dom';
+import './Contact.css'
 
 const Contact = () => {
     return (
@@ -24,7 +25,7 @@ const Contact = () => {
                    </div>
                     </div>
                     <div className="col-md-6">
-                    <Form>
+                    <Form className="form">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label> Your name</Form.Label>
     <Form.Control type="text" placeholder="Enter your name" />
@@ -34,14 +35,6 @@ const Contact = () => {
     <Form.Control type="email" placeholder="Enter email" />
   </Form.Group>
   <Form.Label>Your message</Form.Label>
-  {/* <textarea className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="text" placeholder="Your message" />
-  </textarea> */}
-  {/* <textarea>Your message</textarea>
-  <br></br> */}
-   {/* <FloatingLabel controlId="floatingTextarea" label="Comments" className="mb-3"></FloatingLabel> */}
-   
   <FloatingLabel controlId="floatingTextarea2" label="Comments">
     <Form.Control
       as="textarea"

@@ -29,6 +29,7 @@
 * firebase init
 * firebase deploy
 * UseRedirect
+* UseRequireAuth
 * UseHeroKu
 * UseMongoDB
 * UseDataBaseAtlas

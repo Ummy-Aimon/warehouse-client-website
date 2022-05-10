@@ -6,3 +6,16 @@ padding: 10px;
 color: wheat;
 
 }
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    
+  }
+
+@media only screen and (max-width: 1200px) {
+    .nav{
+        text-align: center;
+        
+    }
+}
