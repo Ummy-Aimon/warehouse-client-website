@@ -6,14 +6,13 @@ import auth from '../../firebase-init';
 const MyItem = () => { 
     const [user]= useAuthState(auth)
     const[items,setItems]=useState([])
-    // console.log(items)
     useEffect(()=>{
  const getItem = async()=>{
      const email= user?.email
-        const url=`https://protected-wave-71878.herokuapp.com/orderItems?email=${email}`
-    // const url=`http://localhost:5000/orderItems`
+        const url=
+`https://protected-wave-71878.herokuapp.com/orderItems?email=${email}`
 const{data}= await axios.get(url)
-console.log(data,"connected")
+
 setItems(data)
  }
  getItem()

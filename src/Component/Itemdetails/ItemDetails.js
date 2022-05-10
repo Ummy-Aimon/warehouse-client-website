@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './ItemDetails.css'
 
 const ItemDetails = (props) => {
     const [quantity, setQuantity] = useState(0)
+    const navigate= useNavigate()
     const {id}= useParams()
     const[items,setItem]=useState({})
     useEffect(()=>{
@@ -38,9 +39,12 @@ const ItemDetails = (props) => {
     <p className="text-secondary fw-bold">Quantity name:{items.Quantity}</p>
     <p className="text-secondary fw-bold">Sold:{items.sold}</p>
     <p className="text-secondary fw-bold">$price:{items.price}</p>
+    <div className="btn">
      <Button onClick={()=> {handleDeliverBtn(items._id)}} type="submit" variant="primary">Delivered</Button>
+     <br></br>
+     <Button onClick={()=>navigate("/manageitem")}type="submit" variant="primary">ManageItem</Button>
+     </div>
   </Card.Body>
-         
         </div>
     );
 };

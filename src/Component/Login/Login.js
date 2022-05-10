@@ -106,7 +106,7 @@ if(user1){
   <p className="text1"> 
   Sign Up For fruit warehouse? <Link className="text-secondary text-decoration-none" to="/signup">Create an account</Link>
 </p>
-  <Button type="submit" className="w-100 fw-bold fs-4 text-white" variant="warning">Submit</Button>
+  <Button type="submit" className="w-100 fw-bold fs-4 text-white " variant="warning">Submit</Button>
   <br></br> <br></br>
   
   <button onClick={() => signInWithGoogle()} type= "submit" className="button"> 

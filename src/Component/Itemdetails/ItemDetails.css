@@ -1,3 +1,7 @@
 .item{
     min-height:700px;
 }
+.btn{
+    display:flex;
+    gap:5px;
+}

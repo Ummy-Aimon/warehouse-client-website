@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ListGroup } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 
 const ManagItem = () => {
+    const navigate= useNavigate()
     const [datas,setData]= useState([])
 
     const handleDelete =(id)=>{
@@ -32,16 +34,18 @@ setData(del)
            <div className="w-50 text-center">
            {
                datas.map(item=><div key={item._id}>
-               {/* <Card style={{ width: '18rem' }}> */}
-  <ListGroup variant="flush">
-    <ListGroup.Item><b>name:</b>{item.Suppliername1} 
-    <button onClick={()=>handleDelete(item._id)}>X</button></ListGroup.Item>
-    <ListGroup.Item><b>Quantity:</b>{item.Quantity
-}</ListGroup.Item>
-    <ListGroup.Item><b>Price:</b>{item.price}</ListGroup.Item>
-  </ListGroup>
-{/* </Card> */}
-
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={item.img} />
+  <Card.Body>
+    <Card.Title>{item.Suppliername1}<button onClick={()=>handleDelete(item._id)}>X</button></Card.Title>
+    <Card.Text>
+      {item.description}
+    </Card.Text>
+    <p> <b>Qurantity:</b>{item.Quantity}</p>
+    <p><b>Price:</b>{item.price}</p>
+    <Button onClick={()=>navigate("/additem")}type="submit" variant="primary">Add new Item</Button>
+  </Card.Body>
+</Card>
                </div>)
            }
            </div>
