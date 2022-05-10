@@ -3,6 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import './ItemDetails.css'
 
+
 const ItemDetails = (props) => {
     const [quantity, setQuantity] = useState(0)
     const navigate= useNavigate()
@@ -27,6 +28,23 @@ const ItemDetails = (props) => {
    .then(res=> res.json())
    .then(data => {console.log(data); setQuantity(parseInt(items.Quantity) - 1)})
       }
+         const handleDeliverBtn1 = id=> {
+        const url= `https://protected-wave-71878.herokuapp.com/updateitem/${id}`
+   fetch(url,{
+       method: 'PUT',
+       headers: { 
+           'content-type':'application/json'
+    },
+
+    body: JSON.stringify({Quantity : parseInt(items.Quantity) + 5})
+   })
+   .then(res=> res.json())
+   .then(data => {console.log(data); setQuantity(parseInt(items.Quantity) +5)})
+      }
+
+      const handleform =(e)=>{
+        e.preventDefault()
+      }
     return (
         <div className="item">
           <Card.Img className="img-item" variant="top" src={items.img} />
@@ -45,6 +63,12 @@ const ItemDetails = (props) => {
      <Button onClick={()=>navigate("/manageitem")}type="submit" variant="primary">ManageItem</Button>
      </div>
   </Card.Body>
+  <h6>Qurantity Stock</h6>
+  <form onSubmit={handleform} >
+      <input type="text" placeholder="qurantity" name="" id="" />
+      
+      <Button onClick={()=> {handleDeliverBtn1(items._id)}} type="submit" variant="primary">Submit</Button>
+    </form>
         </div>
     );
 };
